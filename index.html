@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>图标例子</title>
+		<script src="js/raphael.min.js"></script>
+		<script src="js/chart.js"></script>
+		<script src="js/popup.js"></script>
+	</head>
+	<body>
+		<div id='total'></div>
+		<div id='total2'></div>
+		<div id='total3'></div>
+		<script>
+			var height = 250;
+			Raphael('total',height*2,height).pieChart({title:'XXX报表',data:[
+				{name:'A',value:100},
+				{name:'B',value:200},
+				{name:'C',value:300},
+				{name:'D',value:400},
+				{name:'E',value:500},
+				{name:'F',value:400},
+				{name:'G',value:300},
+				{name:'H',value:200},
+				{name:'I',value:100},
+				{name:'J',value:500}
+			]});
+			Raphael('total2',200,200).rectChart({title:'昨日工商异常检测情况',xlable:'异常量',ylabel:'',data:[
+		{name:'阿里巴巴',value:5},
+		{name:'饿了吗',value:10},
+		{name:'19楼',value:0},
+		{name:'企业',value:2},
+		{name:'网易考拉',value:1}
+	]});
+			Raphael('total3',height*2,height).lineChart({title:'XXX走势报表',xlable:'销量',data:[
+				{name:'一月',value:100},
+				{name:'二月',value:200},
+				{name:'三月',value:300},
+				{name:'四月',value:400},
+				{name:'五月',value:500},
+				{name:'六月',value:600},
+				{name:'七月',value:500},
+				{name:'八月',value:400},
+				{name:'九月',value:300},
+				{name:'十月',value:200},
+				{name:'十一月',value:100},
+				{name:'十二月',value:600}
+			]});
+			
+		</script>
+	</body>
+</html>
